@@ -26,11 +26,11 @@ where you will then unlock the ability to temporarily become immune to damage al
 
 credits:
 
-Art by Andrew van Blerk
-Animation by Andrew van Blerk
-Game Design by Andrew van Blerk
-Lead developer Andrew van Blerk
-naritive lead Andrew van Blerk
+Art by Andrew van Blerk  
+Animation by Andrew van Blerk  
+Game Design by Andrew van Blerk  
+Lead developer Andrew van Blerk  
+naritive lead Andrew van Blerk  
 Post production Andrew van Blerk
 Advertising by Andrew van Blerk
 Creative Director Andrew van Blerk 
