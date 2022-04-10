@@ -20,10 +20,11 @@ where you will then unlock the ability to temporarily become immune to damage al
 
 <img src="images/walk1.gif" />  
 
-####Player walking animation
+<b>Player walking animation</b>
 
-<img src="images/Death.gif" />
-**Player Death animation**
+<img src="images/Death.gif" />  
+
+Player Death animation
   
 <img src="images/lantern1.gif" />
 **Player activating the lantern to move a platform**
