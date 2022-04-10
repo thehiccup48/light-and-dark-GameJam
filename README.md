@@ -19,7 +19,7 @@ Later in the game you will be able to unlock 2 new abilities. the first will fix
 where you will then unlock the ability to temporarily become immune to damage allowing you to bypass some spike walls to complete the game.
 
 <img src="images/walk1.gif" />
-**Player walking animation**
+__Player walking animation__
   
 <img src="images/Death.gif" />
 **Player Death animation**
