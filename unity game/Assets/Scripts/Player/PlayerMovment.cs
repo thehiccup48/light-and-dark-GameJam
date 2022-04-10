@@ -7,7 +7,6 @@ public class PlayerMovment : MonoBehaviour
 
     public CharacterController2D controller;
     public float runSpeed = 20f;
-    public GameObject PlayerSprite;
     Animator animator;
 
     float horizontalMove = 0f;
@@ -16,7 +15,7 @@ public class PlayerMovment : MonoBehaviour
 
     private void Start()
     {
-        animator = PlayerSprite.GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
     }
     void Update()
     {

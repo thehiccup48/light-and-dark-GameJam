@@ -5,16 +5,14 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-    GameObject _sprite;
     SpriteRenderer _spriteRenderer;
     Animator _animator;
 
     bool isPlayerDead = false;
     private void Start()
     {
-        _sprite = GameObject.Find("PlayerSprite");
-        _spriteRenderer = _sprite.GetComponent<SpriteRenderer>();
-        _animator = _sprite.GetComponent<Animator>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        _animator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
