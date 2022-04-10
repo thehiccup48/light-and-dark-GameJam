@@ -18,9 +18,10 @@ Ghost in the machinery (title work in progress) is also an "open world" game in 
 Later in the game you will be able to unlock 2 new abilities. the first will fix all the broken doors throughout the game allowing you to access a "boss fight"
 where you will then unlock the ability to temporarily become immune to damage allowing you to bypass some spike walls to complete the game.
 
-<img src="images/walk1.gif" />
+<img src="images/walk1.gif" />  
+
 ####Player walking animation
-  
+
 <img src="images/Death.gif" />
 **Player Death animation**
   
