@@ -11,6 +11,7 @@ public class NewEnter : MonoBehaviour
         if (PlayerPrefs.GetString("LastExitName") == LastExitName)
         {
             PlayerLoadScript.instance.transform.position = transform.position;
+            GameObject.Find("Player").GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
     }
 
