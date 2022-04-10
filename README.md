@@ -1,4 +1,4 @@
-# light-and-dark-GameJam
+# Ghost in the machinery
 
 This is my submission for the NullPTR light and dark GameJam.
 
