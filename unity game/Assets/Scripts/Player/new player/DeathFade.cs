@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestLoad : MonoBehaviour
+public class DeathFade : MonoBehaviour
 {
     Color Spr;
     float fadeSpeed = 0.3f;
     bool fade = false;
-    GameObject playerSprite;
     GameObject player;
-    SpriteRenderer playerSpr;
-    Animator playerAnimtor;
     // Start is called before the first frame update
     void Start()
     {
-        playerSprite = GameObject.Find("PlayerSprite");
         player = GameObject.Find("Player");
-        playerSpr = playerSprite.GetComponent<SpriteRenderer>();
-        playerAnimtor = playerSprite.GetComponent<Animator>();
         Spr = gameObject.GetComponent<SpriteRenderer>().color;
     }
 
@@ -29,19 +23,17 @@ public class TestLoad : MonoBehaviour
         if (Spr.a >= 1)
         {
             fade = false;
-            playerAnimtor.SetBool("life", true);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         gameObject.GetComponent<SpriteRenderer>().color = Spr;
     }
 
     private void Fade()
     {
-        if (playerSpr.enabled == false)
+        if (player.GetComponent<Death>().IsDead())
         {
             fade = true;
         }
-        if (fade == true)
+        if (fade)
         {
             Spr.a += fadeSpeed * Time.deltaTime;
         }
