@@ -31,13 +31,13 @@ Animation by Andrew van Blerk
 Game Design by Andrew van Blerk  
 Lead developer Andrew van Blerk  
 naritive lead Andrew van Blerk  
-Post production Andrew van Blerk
-Advertising by Andrew van Blerk
-Creative Director Andrew van Blerk 
-Production Director Andrew van Blerk
-Technical Director Andrew van Blerk
-Technical Art Director Andrew van Blerk
-Additional Programing by Andrew van Blerk
+Post production Andrew van Blerk  
+Advertising by Andrew van Blerk  
+Creative Director Andrew van Blerk   
+Production Director Andrew van Blerk  
+Technical Director Andrew van Blerk  
+Technical Art Director Andrew van Blerk  
+Additional Programing by Andrew van Blerk  
 
-with special thanks to
-Andrew van Blerk
+with special thanks to  
+Andrew van Blerk  
