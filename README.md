@@ -13,7 +13,7 @@ Ghost in the machinery (title work in progress), is a 2D platformer game where y
 In your exploration you aquire a lantern you can use to turn the machinery on and off. The machinery includes the platforms, enemies, doors and lights(tying this all back to the main theme).
 Ghost in the machinery (title work in progress) is also an "open world" game in a similar way to hollow knight just with a much smaller world. 
 
-<img src="images/world%20map.png" />
+<img src="images/world%20map.png" width="400px" />
 
 Later in the game you will be able to unlock 2 new abilities. the first will fix all the broken doors throughout the game allowing you to access a "boss fight"
 where you will then unlock the ability to temporarily become immune to damage allowing you to bypass some spike walls to complete the game.
