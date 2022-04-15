@@ -8,7 +8,7 @@ public class NewExit : MonoBehaviour
     public string sceneToLoad;
     public string exitName;
     
-    float fadeSpeed = 0.3f;
+    float fadeSpeed = 0.5f;
     bool shouldIBlackOut = false;
 
     GameObject blackOut;

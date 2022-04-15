@@ -11,7 +11,9 @@ public class PlayerMovment : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
-    bool crouch = false;
+
+    bool notBlackedOut = false;
+    bool canMove = false;
 
     private void Start()
     {
@@ -19,7 +21,11 @@ public class PlayerMovment : MonoBehaviour
     }
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if (CanMove())
+        {
+            Move();
+        }        
+        jump = false;
 
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
 
@@ -27,16 +33,34 @@ public class PlayerMovment : MonoBehaviour
         {
             jump = true;
         }
-        if (Input.GetButtonDown("crouch"))
-        {
-            crouch = true;
-        }
     }
 
-    void FixedUpdate()
+    private void Move()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-        jump = false;
-        crouch = false;
+        if (canMove)
+        {
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        }       
+    }
+    public bool CanMove()
+    {
+        if (GameObject.Find("black in").GetComponent<SpriteRenderer>().color.a <= 0f && GameObject.Find("death fade").GetComponent<SpriteRenderer>().color.a <= 0f)
+        {
+            notBlackedOut = true;
+        }
+        else
+        {
+            notBlackedOut = false;
+        }
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Player_death") && notBlackedOut)
+        {
+            canMove = true;
+        }
+        else
+        {
+            canMove = false;
+        }
+        return canMove;
     }
 }

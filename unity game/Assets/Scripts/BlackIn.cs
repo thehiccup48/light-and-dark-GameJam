@@ -7,7 +7,8 @@ public class BlackIn : MonoBehaviour
 {
     Color color;
     bool stopFade = false;
-    float fadeSpeed = 0.3f;
+    float fadeSpeed = 0.5f;
+
 
     void Start()
     {
@@ -22,13 +23,13 @@ public class BlackIn : MonoBehaviour
 
     private void FadeIn()
     {
-        if (stopFade == false)
+        if (!stopFade)
         {
             color.a -= Time.deltaTime * fadeSpeed;
         }
         gameObject.GetComponent<SpriteRenderer>().color = color;
-        if (color.a <= 0)
-        {
+        if (color.a <= 0 && !stopFade)
+        {            
             stopFade = true;
         }
     }

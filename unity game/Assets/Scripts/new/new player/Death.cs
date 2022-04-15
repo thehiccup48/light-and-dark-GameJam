@@ -8,7 +8,7 @@ public class Death : MonoBehaviour
     SpriteRenderer _spriteRenderer;
     Animator _animator;
 
-    bool isPlayerDead = false;
+    public bool isPlayerDead = false;
     private void Start()
     {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -20,6 +20,10 @@ public class Death : MonoBehaviour
         if (!_spriteRenderer.enabled)
         {
             isPlayerDead = true;
+        }
+        if (_spriteRenderer.enabled)
+        {
+            isPlayerDead = false;
         }
     }
 
@@ -35,6 +39,7 @@ public class Death : MonoBehaviour
     private void Die()
     {
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        _animator.ResetTrigger("live");
         _animator.SetTrigger("die");
     }
 
