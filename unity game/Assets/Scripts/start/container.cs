@@ -24,9 +24,11 @@ public class container : MonoBehaviour
            gameObject.GetComponent<Animator>().SetTrigger("turn_on");
             if (transform.position == previousPos)
             {
-                smolLantern.GetComponent<SmolLanternFollow>().enabled = true;
                 lantern.SetActive(true);
+                smolLantern.GetComponent<SmolLanternFollow>().enabled = true;
+                smolLantern.GetComponent<GlowScript>().enabled = true;              
                 lanternIcon.SetActive(true);
+                GameObject.Find("Lights").SetActive(true);
             }
             previousPos = transform.position;
         }  

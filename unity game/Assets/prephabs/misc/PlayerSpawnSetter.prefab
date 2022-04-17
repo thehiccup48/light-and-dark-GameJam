@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491a5c1e8e8dad041b9fac41143b3794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LastExitName: Respawn
+  LastExitName: 1
 --- !u!1 &7061838428897653056
 GameObject:
   m_ObjectHideFlags: 0
