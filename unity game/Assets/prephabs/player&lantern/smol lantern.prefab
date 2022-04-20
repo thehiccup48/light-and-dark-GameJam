@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3377530818412609390}
   - component: {fileID: 3377530818412609389}
   - component: {fileID: 3377530818412609377}
+  - component: {fileID: 6221997670279632642}
   m_Layer: 0
   m_Name: smol lantern
   m_TagString: Untagged
@@ -111,12 +112,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3377530818412609376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efc2e65508f6ae547b1d9bbe1d15d487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lantern: {fileID: 0}
   animator: {fileID: 3377530818412609390}
 --- !u!114 &3377530818412609377
 MonoBehaviour:
@@ -125,11 +125,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3377530818412609376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 486de7ee0ec6d804c931be4726154d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
   speed: 4
+--- !u!114 &6221997670279632642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377530818412609376}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bdc85be96a09a548bb9b70825a3dd9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

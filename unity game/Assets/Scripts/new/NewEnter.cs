@@ -12,6 +12,7 @@ public class NewEnter : MonoBehaviour
         {
             PlayerLoadScript.instance.transform.position = transform.position;
             GameObject.Find("Player").GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            GameObject.Find("playerRespawn").transform.position = transform.position;
         }
     }
 

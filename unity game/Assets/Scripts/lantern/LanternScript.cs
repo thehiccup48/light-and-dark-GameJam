@@ -2,29 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lantern : MonoBehaviour
+public class LanternScript : MonoBehaviour
 {
-    public bool lightOn = false;
+    public static LanternScript instance;
+    public bool isLightOn = false;
+    public float cooldownTime = 0f;
+    private float timeToNextUse = 0;
+
+    void Start()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (lightOn = false && Input.GetKey("f"))
+        if (Time.time > timeToNextUse)
         {
-            lightOn = true;
-        }
-        if (lightOn = true && Input.GetKey("f"))
-        {
-            lightOn = false;
+            if (Input.GetKey("f"))
+            {
+                isLightOn = !isLightOn;
+                timeToNextUse = Time.time + cooldownTime;
+            }
         }
     }
-
     public bool LightOn()
-    {
-        if (lightOn == true)
-        {
-            return true;
-        }
-        else return false;
+    {        
+            return isLightOn;        
     }
 }

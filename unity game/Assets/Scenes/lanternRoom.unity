@@ -615,11 +615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3849432223024169561, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: exitName
-      value: door enter
+      value: Enter 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849432223024169561, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: sceneToLoad
-      value: 2 lantern transition
+      value: 1 lantern transition
       objectReference: {fileID: 0}
     - target: {fileID: 6562038563623718356, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: m_LocalScale.x
@@ -711,6 +711,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf94949834de984babfcc708775e489, type: 3}
+--- !u!1 &49801707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 915910687613795976, guid: cbf94949834de984babfcc708775e489, type: 3}
+  m_PrefabInstance: {fileID: 49801706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &62899574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62899575}
+  - component: {fileID: 62899576}
+  m_Layer: 0
+  m_Name: Tp Once Of
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &62899575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62899574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.184447, y: -0.53028274, z: -159.97649}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62899576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62899574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2906e462cf0b274b8a7998137c004e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &87698488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,11 +1059,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923892825, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.97
+      value: 11.27
       objectReference: {fileID: 0}
     - target: {fileID: 923892825, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.02
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 923892826, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
+      propertyPath: LastExitName
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1764957483, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: LastExitName
@@ -1067,11 +1119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7061838428897653063, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.32
+      value: 17.31
       objectReference: {fileID: 0}
     - target: {fileID: 7061838428897653063, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.02
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7061838428955128038, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1519,6 +1571,8 @@ MonoBehaviour:
   smolLantern: {fileID: 1226195443}
   lantern: {fileID: 784829490}
   lanternIcon: {fileID: 822679386}
+  Lights: {fileID: 441692756}
+  Door: {fileID: 49801707}
   waypoints:
   - {fileID: 525387434}
   - {fileID: 619562449}
@@ -2213,6 +2267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d76f9300d66d6b478966272d19392ae, type: 3}
+--- !u!1 &441692756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3120699790820052119, guid: 0d76f9300d66d6b478966272d19392ae, type: 3}
+  m_PrefabInstance: {fileID: 441692755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &455964546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,6 +3073,8 @@ MonoBehaviour:
   smolLantern: {fileID: 1226195443}
   lantern: {fileID: 784829490}
   lanternIcon: {fileID: 822679386}
+  Lights: {fileID: 441692756}
+  Door: {fileID: 49801707}
   waypoints:
   - {fileID: 197846961}
   - {fileID: 1240796839}
@@ -3576,6 +3637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fades
       objectReference: {fileID: 0}
+    - target: {fileID: 5278749956551235102, guid: ca9817fb03ab0ea4d9e85c3161c82f28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278749956551235103, guid: ca9817fb03ab0ea4d9e85c3161c82f28, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3956,11 +4021,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1914947890871105693, guid: 5d216828adfeab648b690dbb58709590, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.176735
+      value: -11.164646
       objectReference: {fileID: 0}
     - target: {fileID: 1914947890871105693, guid: 5d216828adfeab648b690dbb58709590, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5360147
+      value: -0.5360304
       objectReference: {fileID: 0}
     - target: {fileID: 1914947890871105693, guid: 5d216828adfeab648b690dbb58709590, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5011,14 +5076,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: smol lantern
       objectReference: {fileID: 0}
-    - target: {fileID: 3377530818412609377, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377530818412609377, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
-      propertyPath: waypoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3377530818412609388, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -5061,14 +5118,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377530818412609388, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377530818412609389, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
-      propertyPath: Lantern
-      value: 
-      objectReference: {fileID: 784829490}
-    - target: {fileID: 3377530818412609389, guid: 1db7f25ba519ef342a010f847303c07e, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5133,8 +5182,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287318778}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071058, w: 0.70710784}
-  m_LocalPosition: {x: 32.2, y: -0.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 32.2, y: -0.0464, z: 0}
+  m_LocalScale: {x: 1.0189452, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 541789021}
   m_RootOrder: 7
@@ -6496,6 +6545,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5602977218289522688, guid: bed4f025197327345a93fd79ebde1253, type: 3}
+      propertyPath: cooldownTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5602977218289522689, guid: bed4f025197327345a93fd79ebde1253, type: 3}
       propertyPath: m_Name
       value: lantern

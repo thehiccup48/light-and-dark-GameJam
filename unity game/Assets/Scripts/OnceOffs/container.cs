@@ -8,6 +8,8 @@ public class container : MonoBehaviour
     public GameObject smolLantern;
     public GameObject lantern;
     public GameObject lanternIcon;
+    public GameObject Lights;
+    public GameObject Door;
     [SerializeField] private GameObject[] waypoints;
     private int currentWaypointIndex = 0;
     [SerializeField] private float speed = 2;
@@ -28,7 +30,8 @@ public class container : MonoBehaviour
                 smolLantern.GetComponent<SmolLanternFollow>().enabled = true;
                 smolLantern.GetComponent<GlowScript>().enabled = true;              
                 lanternIcon.SetActive(true);
-                GameObject.Find("Lights").SetActive(true);
+                Lights.SetActive(true);
+                Door.GetComponent<NewExit>().sceneToLoad = "2 lantern transition";
             }
             previousPos = transform.position;
         }  
