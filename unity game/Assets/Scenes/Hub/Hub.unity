@@ -5439,11 +5439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3849432223024169561, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: exitName
-      value: Enter 2
+      value: Enter 1
       objectReference: {fileID: 0}
     - target: {fileID: 3849432223024169561, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: sceneToLoad
-      value: hub elevator
+      value: Hub elevator 2
       objectReference: {fileID: 0}
     - target: {fileID: 6562038563623718356, guid: cbf94949834de984babfcc708775e489, type: 3}
       propertyPath: m_LocalScale.x
@@ -6147,7 +6147,7 @@ PrefabInstance:
       objectReference: {fileID: 1920336951}
     - target: {fileID: 7810231357888565692, guid: 8e93c9984fd5c3f45be5260eebdfd11e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.62
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 7810231357888565694, guid: 8e93c9984fd5c3f45be5260eebdfd11e, type: 3}
       propertyPath: m_Layer
@@ -6156,6 +6156,10 @@ PrefabInstance:
     - target: {fileID: 7810231357888565694, guid: 8e93c9984fd5c3f45be5260eebdfd11e, type: 3}
       propertyPath: m_TagString
       value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810231359065613378, guid: 8e93c9984fd5c3f45be5260eebdfd11e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 7810231359065613379, guid: 8e93c9984fd5c3f45be5260eebdfd11e, type: 3}
       propertyPath: m_Layer

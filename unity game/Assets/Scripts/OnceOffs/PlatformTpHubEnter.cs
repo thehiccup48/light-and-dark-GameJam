@@ -13,7 +13,7 @@ public class PlatformTpHubEnter : MonoBehaviour
         }
         if (PlayerPrefs.GetString("LastExitName") == "Enter 2")
         {
-            transform.position = new Vector2(transform.position.x, 1);
+            transform.position = new Vector2(transform.position.x, 11);
         }
     }
 }
