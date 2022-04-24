@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 624195639423551279}
   - component: {fileID: 624195639423551276}
-  - component: {fileID: 624195639423551277}
   - component: {fileID: 624195639423551278}
   - component: {fileID: 624195639423550672}
   - component: {fileID: 624195639423550673}
+  - component: {fileID: 1519029080361448429}
   m_Layer: 0
   m_Name: enemy
   m_TagString: enemy
@@ -86,22 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &624195639423551277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624195639423551274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7628f8c63e2a8a8468f2daf3dbac1863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LanternIcon: {fileID: 0}
-  waypoints:
-  - {fileID: 0}
-  speed: 2
 --- !u!58 &624195639423551278
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -149,5 +133,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc2e65508f6ae547b1d9bbe1d15d487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lantern: {fileID: 0}
   animator: {fileID: 624195639423550672}
+--- !u!114 &1519029080361448429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624195639423551274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a9b742f743d504b9ebfe22f8968509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4

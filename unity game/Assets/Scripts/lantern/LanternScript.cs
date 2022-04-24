@@ -33,6 +33,10 @@ public class LanternScript : MonoBehaviour
                 timeToNextUse = Time.time + cooldownTime;
             }
         }
+        if (GameObject.Find("Player").GetComponent<Death>().IsDead())
+        {
+            isLightOn = false;
+        }
     }
     public bool LightOn()
     {        

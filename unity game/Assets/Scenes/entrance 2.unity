@@ -16553,11 +16553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923892825, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.01
+      value: 12.35
       objectReference: {fileID: 0}
     - target: {fileID: 923892825, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.79
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1764957483, guid: 330304c00b5743e4fa61bc465535e90d, type: 3}
       propertyPath: LastExitName
