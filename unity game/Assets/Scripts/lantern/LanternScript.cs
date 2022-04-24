@@ -36,6 +36,6 @@ public class LanternScript : MonoBehaviour
     }
     public bool LightOn()
     {        
-            return isLightOn;        
+        return isLightOn;        
     }
 }

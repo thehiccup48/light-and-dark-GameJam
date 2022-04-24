@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491a5c1e8e8dad041b9fac41143b3794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LastExitName: test1 e2
+  LastExitName: Enter 2
 --- !u!1 &7061838428955128039
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491a5c1e8e8dad041b9fac41143b3794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LastExitName: test1 e1
+  LastExitName: Enter 1
 --- !u!1 &9044553236207634447
 GameObject:
   m_ObjectHideFlags: 0

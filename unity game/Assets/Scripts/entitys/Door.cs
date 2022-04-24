@@ -9,8 +9,8 @@ public class Door : MonoBehaviour
     public GameObject doorWaypoint1;
     Animator m_Animator;
 
-    float speed2 = 5;
-    float speed1 = 2;
+    float speed1 = 7;
+    float speed2 = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +28,12 @@ public class Door : MonoBehaviour
         if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Idle_off"))
         {
             gameObject.transform.position = Vector2.MoveTowards
-                (gameObject.transform.position, doorWaypoint1.transform.position, speed2 * Time.deltaTime);
+                (gameObject.transform.position, doorWaypoint2.transform.position, speed2 * Time.deltaTime);
         }
     }
     private void move()
     {
         gameObject.transform.position = Vector2.MoveTowards
-                (gameObject.transform.position, doorWaypoint2.transform.position, speed1 * Time.deltaTime);
+                (gameObject.transform.position, doorWaypoint1.transform.position, speed1 * Time.deltaTime);
     }
 }

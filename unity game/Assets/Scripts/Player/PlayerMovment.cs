@@ -22,6 +22,7 @@ public class PlayerMovment : MonoBehaviour
     }
     void Update()
     {
+
         GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>().Follow = gameObject.transform;
         if (CanMove())
         {

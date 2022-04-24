@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/2 lantern transition.unity
     guid: 8036f48d5097b2e47a86b4f015e8af38
   - enabled: 1
+    path: Assets/Scenes/lanternRoom2.unity
+    guid: 059e2e73d92e2cb42984774f12d19293
+  - enabled: 1
     path: Assets/Scenes/entrance 2.unity
     guid: 78b1b4c569b112a43b462fc9b98af71a
+  - enabled: 1
+    path: Assets/Scenes/hub elevator.unity
+    guid: a009f15035de0c147ae9ffaa6b7a44a4
   - enabled: 1
     path: Assets/Scenes/Hub/Hub.unity
     guid: 5bcd384f6ac14c447a4a93b2aadea854
@@ -29,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/test/test 2.unity
     guid: 26aa4b9db25abf445a949755b338cc9e
+  - enabled: 1
+    path: Assets/Scenes/Platform Chalange.unity
+    guid: e6fbb0af112e0d942856f05ca7cd5749
   m_configObjects: {}

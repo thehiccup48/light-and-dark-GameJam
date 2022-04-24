@@ -133,9 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7628f8c63e2a8a8468f2daf3dbac1863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanternIcon: {fileID: 0}
-  waypoints: []
-  speed: 0
+  waypoints:
+  - {fileID: 7810231359065613379}
+  - {fileID: 7810231359141525067}
+  speed: 3
 --- !u!50 &7483674483705457701
 Rigidbody2D:
   serializedVersion: 4
@@ -226,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc2e65508f6ae547b1d9bbe1d15d487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lantern: {fileID: 0}
   animator: {fileID: 1386238827}
 --- !u!1 &7810231359065613379
 GameObject:
